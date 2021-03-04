@@ -33,7 +33,7 @@ class AlphaCheck:
         if r[::-1].lower() == r.lower():
             print('Its a Palindrome')
         else:
-            print('Not a Palindrome')
+            print('Its Not a Palindrome')
 
 n = True
 while n:
