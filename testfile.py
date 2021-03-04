@@ -26,6 +26,13 @@ class AlphaCheck:
         self.sentence = sentence
         print('The reverse of String: ' +self.sentence[::-1])
 
+    def palindrome_or_not(self, sentence):
+        self.sentence = sentence
+        r = self.sentence.replace(' ','')
+        if r[::-1].lower() == r.lower():
+            print('Its a Palindrome')
+        else:
+            print('Not a Palindrome')
 
 n = True
 while n:
@@ -37,7 +44,7 @@ while n:
     result.word_length(a)
     result.matching_char(a, b)
     result.reverse(a)
-    result.capital_case(a)
+    result.palindrome_or_not(a)
 
     print('Check new string? Y or N')
     c = input()
