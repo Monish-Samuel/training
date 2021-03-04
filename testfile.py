@@ -23,7 +23,7 @@ class AlphaCheck:
 
     def reverse(self, sentence):
         self.sentence = sentence
-        print('The sentence in reverse is : ' + self.sentence[::-1])
+        print(self.sentence[::-1])
 
     def capital_case(self, sentence):
         self.sentence = sentence
