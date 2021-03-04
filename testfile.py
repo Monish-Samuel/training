@@ -1,0 +1,48 @@
+class AlphaCheck:
+
+    def __init__(self, sentence, word):
+        self.sentence = sentence
+        self.word = word
+
+    def word_length(self, sentence):
+        self.sentence = sentence
+        r = self.sentence.replace(" ", "")
+        size = len(r)
+        print(f'The number of characters in "{sentence}" is {size}')
+
+    def matching_char(self, sentence, word):
+        self.sentence = sentence
+        self.word = word
+        i = 0
+        for char in self.sentence:
+            if char == self.word:
+                i += 1
+        print(f'No. of {self.word} in "{self.sentence}" is {i}')
+
+    def reverse(self, sentence):
+        self.sentence = sentence
+        print(self.sentence[::-1])
+
+    def capital_case(self, sentence):
+        self.sentence = sentence
+        print(self.sentence.upper())
+
+
+n = True
+while n:
+
+    a = input('Enter the String: ')
+    b = input('Enter the character to be counted (CASE SENSITIVE): ')
+    result = AlphaCheck(a, b)
+
+    result.word_length(a)
+    result.matching_char(a, b)
+    result.reverse(a)
+    result.capital_case(a)
+
+    print('Check new string? Y or N')
+    c = input()
+    if c.lower() == 'y':
+        n = True
+    else:
+        n = False
