@@ -11,6 +11,7 @@ class AlphaCheck:
         size = len(r)
         print(f'The number of characters in "{sentence}" is {size}')
 
+#This method for finding matching statement
     def matching_char(self, sentence, word):
         self.sentence = sentence
         self.word = word
