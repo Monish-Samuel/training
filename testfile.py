@@ -4,6 +4,7 @@ class AlphaCheck:
         self.sentence = sentence
         self.word = word
 
+#This method is used to find the number of characters in a string without spaces
     def word_length(self, sentence):
         self.sentence = sentence
         r = self.sentence.replace(" ", "")
