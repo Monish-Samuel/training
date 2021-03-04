@@ -26,11 +26,6 @@ class AlphaCheck:
         self.sentence = sentence
         print('The reverse of String: ' +self.sentence[::-1])
 
-#This method is to Capitalize all the characters in a string
-    def capital_case(self, sentence):
-        self.sentence = sentence
-        print('Capitalized string: ' +self.sentence.upper())
-
 
 n = True
 while n:
