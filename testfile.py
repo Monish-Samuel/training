@@ -26,6 +26,7 @@ class AlphaCheck:
         self.sentence = sentence
         print('The reverse of String: ' +self.sentence[::-1])
 
+#This method is used to find whether the string is palindrome or not
     def palindrome_or_not(self, sentence):
         self.sentence = sentence
         r = self.sentence.replace(' ','')
