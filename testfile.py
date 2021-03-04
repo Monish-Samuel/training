@@ -35,6 +35,7 @@ class AlphaCheck:
         else:
             print('Its Not a Palindrome')
 
+#The following code gets input and calls the function to do needed actions
 n = True
 while n:
 
